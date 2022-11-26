@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font: {
+    family: "Inter", sans-serif;
+    size: 14px;
+    weight: $normal;
+  }
+  line-height: 1;
+}
+
+img {
+  max-width: 100%;
+}
+
+svg {
+  height: 100%;
+  width: 100%;
+}

@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+  head
+    title Some site title
+    link(rel="shortcut icon" type="image/x-icon" href="/public/favicon.ico")
+    link(rel="stylesheet" href="../theme/init.scss")
+    style.
+      @font-face {
+        font-family: "Inter";
+        font-weight: 400;
+        src: url("/public/fonts/Inter-Regular.ttf");
+      }
+    script(defer type="module" src="../js/main.js")
+  body
+    include header
+    block content
+    include footer
