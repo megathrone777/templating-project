@@ -1,1 +1,63 @@
-// Content styles here
+.content {
+  &__podcast {
+    display: flex;
+    justify-content: space-between;
+
+    &__img {
+      padding-left: 70px;
+      border-radius: 12px;
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      &__text {
+        display: flex;
+        padding-right: 135px;
+        padding-left: 60px;
+        margin-bottom: 90px;
+        // width: 525px;
+
+        &__title {
+          color: white;
+          font-size: 70px;
+          width: 525px;
+        }
+
+        &__title2 {
+          color: white;
+          font-size: 75px;
+        }
+
+        &__title3 {
+          color: white;
+          font-size: 80px;
+          margin-left: 25px;
+        }
+      }
+
+      &__subtitle {
+        color: white;
+        font-size: 15px;
+        padding-left: 80px;
+        margin-bottom: 15px;
+      }
+
+      &__list {
+        display: flex;
+        list-style: none;
+        padding-left: 80px;
+      }
+
+      &__item {
+        margin-right: 20px;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
