@@ -1,14 +1,14 @@
 .header {
   background-color: $blackBg;
   height: 120px;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 40px;
 
   &__logo {
-    padding-block: 45px;
-    padding-left: 50px;
+    position: relative;
+    left: -10px;
 
     &__link {
       color: white;

@@ -3,5 +3,33 @@ extends ../blocks/layout
 block content
   .content
     .content__podcast
-      img.content__podcast__img(src='/public/images/podcast_img.jpg' alt='podcast_img')
-      p.content__podcast__title 
+      .content__podcast__media
+        img.content__podcast__img(src='/public/images/podcast_img.jpg' alt='podcast_img')
+
+      .content__podcast__wrapper
+        .content__podcast__wrapper__text
+          span.content__podcast__wrapper__text__title Take your podcast to the           
+            span.content__podcast__wrapper__text__title2 next
+              span.content__podcast__wrapper__text__title3 level
+
+        span.content__podcast__wrapper__subtitle Listen on
+
+        ul.content__podcast__wrapper__list
+          li.content__podcast__wrapper__item
+            a.content__podcast__wrapper__item__link(href='//spotify.com')
+              img.content__podcast__wrapper__img(src='/public/images/spotify.png' alt='spotify')
+          li.content__podcast__wrapper__item
+            a.content__podcast__wrapper__item__link(href='//deezer.com')
+              img.content__podcast__wrapper__img(src='/public/images/deezer.png' alt='deezer')
+          li.content__podcast__wrapper__item
+            a.content__podcast__wrapper__item__link(href='//soundcloud.com')
+              img.content__podcast__wrapper__img(src='/public/images/soundcloud.png' alt='soundcloud')
+          li.content__podcast__wrapper__item
+            a.content__podcast__wrapper__item__link(href='//genius.com')
+              img.content__podcast__wrapper__img(src='/public/images/genius.png' alt='genius')
+          li.content__podcast__wrapper__item
+            a.content__podcast__wrapper__item__link(href='//apple.com')
+              img.content__podcast__wrapper__img(src='/public/images/hz.png' alt='hz')
+    
+    .content__episodes
+      .content__

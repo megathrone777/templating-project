@@ -11,11 +11,12 @@ body {
 body {
   -webkit-font-smoothing: antialiased;
   font: {
-    family: "Inter", sans-serif;
+    family: "DMSans", sans-serif;
     size: 14px;
     weight: $normal;
   }
   line-height: 1;
+  background-color: $blackBg;
 }
 
 img {
@@ -25,4 +26,9 @@ img {
 svg {
   height: 100%;
   width: 100%;
+}
+
+#container {
+  max-width: 1440px;
+  margin-inline: auto;
 }
