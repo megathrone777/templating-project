@@ -3,7 +3,8 @@ extends ../blocks/layout
 block content
   .content
     .content__podcast
-      img.content__podcast__img(src='/public/images/podcast_img.jpg' alt='podcast_img')
+      .content__podcast__media
+        img.content__podcast__img(src='/public/images/podcast_img.jpg' alt='podcast_img')
 
       .content__podcast__wrapper
         .content__podcast__wrapper__text
@@ -11,7 +12,7 @@ block content
             span.content__podcast__wrapper__text__title2 next
               span.content__podcast__wrapper__text__title3 level
 
-        p.content__podcast__wrapper__subtitle Listen on
+        span.content__podcast__wrapper__subtitle Listen on
 
         ul.content__podcast__wrapper__list
           li.content__podcast__wrapper__item

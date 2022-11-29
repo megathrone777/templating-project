@@ -3,22 +3,26 @@
     display: flex;
     justify-content: space-between;
 
-    &__img {
-      padding-left: 70px;
-      border-radius: 12px;
+    &__media {
+      width: 650px;
+      border-radius: 15px;
+      overflow: hidden;
     }
 
     &__wrapper {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      width: 870px;
 
       &__text {
         display: flex;
         padding-right: 135px;
         padding-left: 60px;
         margin-bottom: 90px;
-        // width: 525px;
+        margin-top: 100px;
+        line-height: 88px;
+        letter-spacing: 3.2px;
 
         &__title {
           color: white;
@@ -26,7 +30,7 @@
           width: 525px;
         }
 
-        &__title2 {
+        &__title2 {          
           color: white;
           font-size: 75px;
         }
@@ -42,11 +46,12 @@
         color: white;
         font-size: 15px;
         padding-left: 80px;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
       }
 
       &__list {
         display: flex;
+        // justify-content: center;
         list-style: none;
         padding-left: 80px;
       }
