@@ -3,10 +3,9 @@
   "license": "UNLICENCED",
   "name": "templating-project",
   "version": "1.0.0",
-  "source": "./src/pages/*.pug",
   "scripts": {
-    "build": "parcel build",
-    "start": "parcel --port 1337"
+    "build": "parcel build src/pages/*.pug",
+    "start": "parcel src/pages/*.pug --port 1337"
   },
   "devDependencies": {
     "@parcel/transformer-pug": "2.8.0",
