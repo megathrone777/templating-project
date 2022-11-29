@@ -1,0 +1,14 @@
+{
+  "description": "Some project description",
+  "license": "UNLICENCED",
+  "name": "templating-project",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel src/pages/*.pug"
+  },
+  "devDependencies": {
+    "@parcel/transformer-pug": "2.8.0",
+    "@parcel/transformer-sass": "2.8.0",
+    "parcel": "^2.8.0"
+  }
+}
