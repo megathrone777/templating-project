@@ -1,3 +1,27 @@
+//- .header
+//-   .header__logo
+//-     a.header__logo__link(href='/')
+//-       img.header__logo__img(src='/public/images/header_logo.svg' alt='header_logo')
+
+//-   .header__menu
+//-     ul.header__menu__list
+//-       li.header__menu__item 
+//-         a.header__menu__item__link(href='/') Home
+//-       li.header__menu__item
+//-        a.header__menu__item__link(href='./episodes.pug') Episodes
+//-       li.header__menu__item 
+//-        a.header__menu__item__link(href='./about.pug') About
+//-       li.header__menu__item 
+//-        a.header__menu__item__link(href='./contacts.pug') Contacts
+
+-
+  var menuItems = [
+    { text: "Home", url: "./" },
+    { text: "Episodes", url: "./episodes.pug" },
+    { text: "About", url: "./about.pug" },
+    { text: "Contact", url: "./contacts.pug" }
+  ]
+
 .header
   .header__logo
     a.header__logo__link(href='/')
@@ -5,11 +29,6 @@
 
   .header__menu
     ul.header__menu__list
-      li.header__menu__item 
-        a.header__menu__item__link(href='#') Home
-      li.header__menu__item
-       a.header__menu__item__link(href='#') Episodes
-      li.header__menu__item 
-       a.header__menu__item__link(href='#') About
-      li.header__menu__item 
-       a.header__menu__item__link(href='./contacts.pug') Contacts
+      each item in menuItems
+        li.header__menu__item
+          a.header__menu__item__link(href=item.url)= item.text

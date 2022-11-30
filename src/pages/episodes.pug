@@ -1,0 +1,48 @@
+extends ../blocks/layout
+
+prepend head
+  title= "ARCHILOHHH"
+
+block content
+  .episodes
+    .episodes__heading
+      h1.episodes__heading__title Latest episodes
+      button.button(type='button') View all episodes
+
+    .episodes__item
+
+      .episodes__item__wrapper
+        .episodes__item__wrapper__media
+          img.episodes__item__wrapper__img(src='/public/images/episodes_item_img1.jpg')
+        .episodes__item__wrapper__layout
+          .episodes__item__wrapper__layout__label
+            span.episodes__item__wrapper__layout__name Gear 
+          h3.episodes__item__wrapper__layout__episode Episode 3
+          h1.episodes__item__wrapper__layout__title Should you get outboard audio gear?
+          h2.episodes__item__wrapper__layout__text Is hardware really worth it when it comes to podcasting? 
+            | The answer is...it depends. Here's our reasons on why you might want to consider picking something up.
+          button.episodes__item__wrapper__layout__button(type='button') View Episode Details
+
+      .episodes__item__wrapper
+        .episodes__item__wrapper__media
+          img.episodes__item__wrapper__img(src='/public/images/episodes_item_img2.jpg')
+        .episodes__item__wrapper__layout
+          .episodes__item__wrapper__layout__label
+            span.episodes__item__wrapper__layout__name Tips & Tricks 
+          h3.episodes__item__wrapper__layout__episode Episode 2
+          h1.episodes__item__wrapper__layout__title Mic tricks to take you to the next level
+          h2.episodes__item__wrapper__layout__text Is hardware really worth it when it comes to podcasting? 
+            | The answer is...it depends. Here's our reasons on why you might want to consider picking something up.
+          button.episodes__item__wrapper__layout__button(type='button') View Episode Details
+
+      .episodes__item__wrapper
+        .episodes__item__wrapper__media
+          img.episodes__item__wrapper__media__img(src='/public/images/episodes_item_img3.jpg')
+        .episodes__item__wrapper__layout
+          .episodes__item__wrapper__layout__label
+            span.episodes__item__wrapper__layout__name Gear 
+          h3.episodes__item__wrapper__layout__episode Episode 1
+          h1.episodes__item__wrapper__layout__title The best microphone under $200
+          h2.episodes__item__wrapper__layout__text With so many microphones on the market, how are you supposed to know what's the best? 
+            | Take a look at our top picks.
+          button.episodes__item__wrapper__layout__button(type='button') View Episode Details
