@@ -3,15 +3,15 @@
   border-radius: 6px;
   cursor: pointer;
   width: 178px;
-      height: 51px;
-      background: #118DA8;
-      border-radius: 6px;
-      font-size: 17px;
-      color: white;
+  height: 51px;
+  background: $blue;
+  border-radius: 6px;
+  font-size: 17px;
+  color: white;
 
-      &:hover {
-        background-color: white;
-        color: black;
-        cursor: pointer;
-      }
+  &:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+  }
 }
