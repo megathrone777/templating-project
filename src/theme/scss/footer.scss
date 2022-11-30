@@ -1,4 +1,74 @@
 .footer {
-  background-color: $red;
-  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+
+  &__logo {
+    margin-right: 240px;
+
+    &__main {
+      width: 160px;
+      height: 35px;
+      margin-bottom: 25px;
+    }
+
+    &__list {
+      display: flex;
+      column-gap: 15px;
+      list-style: none;
+    }
+  }
+
+  &__menu {
+    margin-right: 125px;
+
+    &__link {
+      text-decoration: none;
+      font-size: 17px;
+      line-height: 27px;
+      color: rgba(255, 255, 255, 0.7);
+
+      &:hover {
+        color: $blue;
+      }
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      gap: 10px;
+    }
+  }
+
+  &__menu2 {
+    margin-right: 30px;
+    margin-bottom: 130px;
+
+    &__link {
+      text-decoration: none;
+      font-size: 17px;
+      line-height: 27px;
+      color: rgba(255, 255, 255, 0.7);
+
+      &:hover {
+        color: $blue;
+      }
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      list-style: none;
+    }
+  }
+
+  &__icon__menu {
+
+    &__list {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+  }
 }

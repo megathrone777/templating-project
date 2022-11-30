@@ -4,5 +4,19 @@ prepend head
   title= "About"
 
 block content
-  .content
-    h1 Contacts page content here
+  .about
+    .about__wrapper
+      .about__wrapper__img
+        img.about__wrapper__arrow(src='/public/images/about_arrow.png' alt='about_arrow')
+
+      .about__wrapper__text
+        span.about__wrapper__text__intro Meet your host       
+           
+        span.about__wrapper__text__title Jacob Paulaner
+
+        span.about__wrapper__text__subtitle1 Jacob has a background in audio engineering, and has been podcasting since the early days.
+
+        span.about__wrapper__text__subtitle2 He's here to help you level up your game by sharing everything he's learned along the way.
+
+    .about__media
+      img.about__img(src='/public/images/about_img.jpg' alt='about_img')

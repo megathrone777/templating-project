@@ -4,6 +4,16 @@ prepend head
   title= "Home"
 
 block content
+
+  //- -
+  //-   var menuItems = [
+  //-     { imgSrc: "spotify.png", url: "http://spotify.com" },
+  //-     { imgSrc: "deezer.png", url: "http://deezer.com" },
+  //-     { imgSrc: "soundcloud.png", url: "http://soundcloud.com" },
+  //-     { imgSrc: "genius.png", url: "http://genius.com" },
+  //-     { imgSrc: "apple.png", url: "http://apple.com" },
+  //-   ]
+
   .podcast
     .podcast__media
       img.podcast__img(src='/public/images/podcast_img.jpg' alt='podcast_img')
@@ -17,6 +27,11 @@ block content
       span.podcast__wrapper__subtitle Listen on
 
       ul.podcast__wrapper__list
+        //- each item in menuItems
+        //-   li.podcast__wrapper__item
+        //-     a.podcast__wrapper__item__link(href=item.url)
+        //-       img.podcast__wrapper__img(src="public/images/#{item.imgSrc}" alt="Social Icon" target="_blank")
+
         li.podcast__wrapper__item
           a.podcast__wrapper__item__link(href='//spotify.com')
             img.podcast__wrapper__img(src='/public/images/spotify.png' alt='spotify')

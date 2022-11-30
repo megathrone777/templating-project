@@ -1,0 +1,56 @@
+.about {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 100px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 590px;
+    justify-content: center;
+
+
+    &__img {
+      margin-bottom: 20px;
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+
+      &__intro {
+        font-size: 18px;
+        line-height: 27px;
+        color: $blue;
+
+      }
+
+      &__title {
+        font-size: 65px;
+        line-height: 80px;
+        color: white;
+        margin-bottom: 30px;
+      }
+
+      &__subtitle1 {
+        font-size: 22px;
+        line-height: 33px;
+        color: rgba(255, 255, 255, 0.7);
+        margin-bottom: 35px;
+
+      }
+
+      &__subtitle2 {
+        font-size: 22px;
+        line-height: 33px;
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+  }
+
+  &__media {
+    width: 650px;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+}
