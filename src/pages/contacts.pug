@@ -4,5 +4,14 @@ prepend head
   title= "Contacts"
 
 block content
-  .content
-    h1 Contacts page content here
+  .contacts
+    .contacts__wrapper
+      span.contacts__wrapper__text Email Newsletter
+      span.contacts__wrapper__title Subscribe for updates
+
+    .contacts__form
+      .contacts__form__wrapper
+        form.contacts__form__list
+          input.contacts__form__item(type="text" id="name" name="name" value="Name")
+          input.contacts__form__item(type="text" id="email" name="email" value="Email")
+        button.contacts__form__button(type='button') Submit
